@@ -37,16 +37,17 @@ Frontend connecté à l'API sécurisée UFood.
 |---|---|
 | ![Connexion](images/UF-login.png) | ![Inscription](images/UF-signUp.png) |
 
-<!-- IMAGE : page d'un restaurant (infos, bouton « Mark as visited » et section restaurants similaires) -->
-
-<!-- IMAGE : page « My Profile » avec les visites récentes et les listes de favoris -->
-
+### Profil
+| Recent visits | Favorites | 
+|---|---|
+| ![visits](images/UF-visits.png) | ![favorites](images/UF-favorite.png) |
+| friends | other user |
+|---|---|
+| ![friends](images/UF-follow.png) | ![other](images/UF-friend.png) |
 ## Mes tâches
 
-<!-- À ajuster : garde seulement ce que tu as réalisé toi-même -->
-- Création d'une couche de service centralisée (`api.js`) pour tous les appels à l'API, avec gestion du jeton et des erreurs 401.
-- Pages d'authentification et gardes de navigation (`requiresAuth`, `guestOnly`).
-- Carte Leaflet avec calcul d'itinéraire depuis la géolocalisation.
+- Implémentation des fonctionnalités concernant les restaurants favoris/visités
+- Implémentation de l'interface pour le profil utilisateur
 - Barre de recherche avec autocomplétion réutilisable (restaurants et utilisateurs).
 - Recommandation de restaurants similaires selon la cuisine et la gamme de prix.
 - Gestion des listes de favoris et des abonnements entre utilisateurs.
@@ -57,9 +58,7 @@ Frontend connecté à l'API sécurisée UFood.
 - Gérer l'**authentification par jeton** côté client et protéger des routes avec Vue Router.
 - Centraliser les appels HTTP pour éviter la duplication et gérer les erreurs de façon uniforme.
 - Intégrer une **carte interactive** et un service d'itinéraire dans un composant Vue.
-- Automatiser la qualité du code avec **ESLint, Prettier et des hooks Git** (Husky).
-- Écrire des **tests de composants** avec Vitest et Vue Test Utils.
 
 ## Code source
 
-Le code source est hébergé dans un dépôt privé (projet universitaire, Université Laval). Il est disponible sur demande.
+Le code source est hébergé dans un dépôt privé (projet universitaire, Université Laval).
